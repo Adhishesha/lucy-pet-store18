@@ -1,0 +1,21 @@
+dog: [
+    { name: "Dog Food", price: 500, img: "images/dog food.jpeg" },
+    { name: "Dog Toy", price: 300, img: "images/dog toy.jpeg" },
+    { name: "Dog Bed", price: 1200, img: "images/dog bed.jpeg" },
+    { name: "Dog Collar", price: 250, img: "images/dog collar.jpeg" },
+    { name: "Dog Shampoo", price: 350, img: "images/dog shampoo.jpeg" },
+
+    // ✅ NEW PRODUCT ADDED
+    { name: "Dog Biscuits", price: 180, img: "images/dog food.jpeg" }
+],
+
+function updateCart() {
+    total = 0;
+
+    cart.forEach(item => {
+        total += item.price;
+    });
+
+    document.getElementById("total").innerText = total;
+}
+ both in script js

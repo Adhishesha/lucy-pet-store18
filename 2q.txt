@@ -1,0 +1,46 @@
+/* 🌈 Updated page background and font */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;   /* updated font */
+    background-color: #fef6e4;                    /* new background color */
+    text-align: center;
+}
+
+/* 📦 Product card layout improvement */
+.product {
+    background: #ffffff;
+    width: 230px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 12px;                          /* rounded corners */
+}
+
+/* 🧭 Navigation buttons layout */
+.menu button {
+    padding: 12px 20px;
+    margin: 8px;
+    background: #2e7d32;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+/* 🛒 Cart box styling */
+.cart {
+    width: 350px;                                 /* adjusted layout width */
+    border-radius: 10px;
+}
+ 
+
+code in style .css
+<style>
+    /* 🎄 Special section styling */
+    #offers {
+        background-color: #ffecb3;
+        padding: 20px;
+        margin: 25px;
+        border: 2px dashed #ff6f00;
+        border-radius: 10px;
+        font-style: italic;      /* font style change */
+    }
+</style>
+html.
