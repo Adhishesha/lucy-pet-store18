@@ -1,0 +1,18 @@
+<button type="button" onclick="toggleFeedback()">
+    Hide / Show Feedback
+</button>
+payment.html
+ <div id="feedbackSection" style="display:none; margin-top:20px;">
+same
+
+
+function toggleFeedback() {
+    const section = document.getElementById("feedbackSection");
+
+    if (section.style.display === "none" || section.style.display === "") {
+        section.style.display = "block";
+    } else {
+        section.style.display = "none";
+    }
+}
+payment.js

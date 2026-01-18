@@ -1,0 +1,39 @@
+unction updateCart() {
+    const cartList = document.getElementById("cartItems");
+    cartList.innerHTML = "";
+    total = 0;
+
+    cart.forEach((item, index) => {
+        total += item.price;
+        cartList.innerHTML += `
+            <li>
+                ${item.name} - ₹${item.price}
+                <button onclick="removeFromCart(${index})">❌</button>
+            </li>
+        `;
+    });
+
+    let discount = 0;
+    let finalTotal = total;
+
+    // ✅ APPLY 10% DISCOUNT
+    if (total > 1000) {
+        discount = total * 0.10;
+        finalTotal = total - discount;
+    }
+
+    document.getElementById("total").innerText =
+        finalTotal + " (Discount: ₹" + discount + ")";
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("total", finalTotal);
+}
+
+// GO TO PAYMENT
+function goToPayment() {
+    if (cart.length === 0) {
+        alert("Cart is empty");
+        return;
+    }
+    window.location.href = "payment.html";
+}

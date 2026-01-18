@@ -1,0 +1,46 @@
+unction submitFeedback() {
+    const name = document.getElementById("fbName").value.trim();
+    const email = document.getElementById("fbEmail").value.trim();
+    const mobile = document.getElementById("fbMobile").value.trim();
+    const message = document.getElementById("fbMessage").value.trim();
+
+    if (!name || !email || !mobile || !message) {
+        alert("Please fill all feedback fields");
+        return;
+    }
+
+    let feedbackText = `🐾 Lucy Pet Store - Customer Feedback
+----------------------------------
+Name: ${name}
+Email: ${email}
+Mobile: ${mobile}
+
+Feedback:
+${message}
+
+Date: ${new Date().toLocaleString()}
+----------------------------------
+`;
+
+    const blob = new Blob([feedbackText], { type: "text/plain" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "Lucy_Feedback.txt";
+    link.click();
+
+    alert("Thank you for your feedback!");
+
+    window.location.href = "index.html";
+}
+function toggleFeedback() {
+    const section = document.getElementById("feedbackSection");
+
+    if (section.style.display === "none" || section.style.display === "") {
+        section.style.display = "block";
+    } else {
+        section.style.display = "none";
+    }
+}
+
+button type="button" onclick="submitFeedback()">Submit Feedback</button>
+</div>

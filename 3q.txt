@@ -1,0 +1,13 @@
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address");
+    return;
+}
+
+// Mobile number validation (10 digits)
+const mobilePattern = /^[0-9]{10}$/;
+if (!mobilePattern.test(mobile)) {
+    alert("Please enter a valid 10-digit mobile number");
+    return;
+}

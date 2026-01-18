@@ -1,0 +1,17 @@
+function clearFeedback() {
+    document.getElementById("fbName").value = "";          payment.js
+    document.getElementById("fbEmail").value = "";
+    document.getElementById("fbMobile").value = "";
+    document.getElementById("fbMessage").value = "";
+
+    document.getElementById("thankMsg").innerText =
+        "🙏 Thank you for your feedback!";
+}
+
+
+<button type="button" onclick="clearFeedback()">Clear Form</button>  payment html after
+
+<p id="thankMsg" style="color:green; font-weight:bold;"></p>
+
+
+<button type="button" onclick="submitFeedback()">Submit Feedback</button>  1

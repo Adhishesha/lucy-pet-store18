@@ -1,0 +1,32 @@
+<style>
+    .festival-offer {
+        background-color: #fff0f0;
+        border: 2px dashed #d10000;
+        padding: 20px;
+        margin: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .festival-offer h2 {
+        color: #b30000;
+        font-size: 26px;
+    }
+
+    .festival-offer p {
+        font-size: 18px;
+        color: #333;
+    }
+</style>
+
+
+<section class="festival-offer">
+    <h2>🎄 Christmas & 🎉 New Year Special Offers</h2>
+    <p>
+        Celebrate the festive season with exciting discounts!<br><br>
+        🎁 Flat  offers on all pet products<br>
+        🐾 Special gifts for your pets<br>
+        🚚 Free delivery during festive days
+    </p>
+</section>
+
